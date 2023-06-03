@@ -1,0 +1,40 @@
+Metadata-Version: 1.2
+Name: URDUPLAGCHECK
+Version: 1.0.0
+Summary: A tool for checking plagiarism in Urdu text
+Author: Rishi Barua
+Author-Email: rishi@example.com
+License: MIT
+Description: URDUPLAGCHECK is a Python tool designed to check for plagiarism in Urdu text. It uses the nltk library for text tokenization and the mtranslate library for language translation. By comparing the similarity between two Urdu texts, it identifies potential plagiarized content and provides a similarity score.
+
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+
+Sample Usage:
+-------------
+1. Install the required dependencies:
+   $ pip install nltk mtranslate
+
+2. Import the URDUPLAGCHECK module in your Python script:
+   from URDUPLAGCHECK import plagiarism_checker
+
+3. Provide two Urdu texts for comparison:
+   urdu_text1 = "تم سب پہلے بیشک اپنی کوششیں کیوں نہیں کرتے؟"
+   urdu_text2 = "تم کیوں اپنی کوششیں نہیں کرتے؟"
+
+4. Check for plagiarism:
+   similarity_score = plagiarism_checker.calculate_similarity(urdu_text1, urdu_text2)
+   dissimilar_words = plagiarism_checker.find_dissimilar_words(urdu_text1, urdu_text2)
+
+5. Print the results:
+   print(f"Similarity score: {similarity_score * 100:.2f}%")
+   print("Dissimilar words:")
+   for word in dissimilar_words:
+       print(word)
+
+Note: Make sure to download the required NLTK data by running the following command before executing the script:
+   nltk.download('punkt')
