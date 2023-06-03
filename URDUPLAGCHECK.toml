@@ -1,0 +1,14 @@
+# Code Repository Manifest
+
+name = "URDUPLAGCHECK"
+version = "1.0.0"
+description = "A tool for checking plagiarism in Urdu text"
+author = "Rishi Barua"
+license = "MIT"
+
+[repository]
+url = "https://github.com/RISHI9922/URDUPLAGCHECK"
+
+[dependencies]
+nltk = ">=3.6.3"
+mtranslate = ">=1.8.0"
