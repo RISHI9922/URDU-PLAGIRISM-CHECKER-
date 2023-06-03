@@ -1,0 +1,56 @@
+URDUPLAGCHECK
+
+A tool for checking plagiarism in Urdu text
+
+Author: Rishi Barua
+
+Description:
+URDUPLAGCHECK is a Python tool designed to check for plagiarism in Urdu text. It uses the nltk library for text tokenization and the mtranslate library for language translation. By comparing the similarity between two Urdu texts, it identifies potential plagiarized content and provides a similarity score.
+
+Usage:
+1. Install the required dependencies by running the following command:
+pip install -r requirements.txt
+
+python
+
+
+2. Import the necessary modules in your Python script:
+```python
+import nltk
+from mtranslate import translate
+from nltk.tokenize import word_tokenize
+Define the following functions in your script:
+translate_to_english(text): Translates Urdu text to English using the mtranslate library.
+calculate_similarity(text1, text2): Calculates the similarity score between two texts using tokenization and set operations.
+find_dissimilar_words(text1, text2): Finds the dissimilar words between two texts.
+Download the required NLTK data by running the following command:
+python
+
+nltk.download('punkt')
+Define your Urdu texts to check for plagiarism:
+python
+
+urdu_text1 = "تم سب پہلے بیشک اپنی کوششیں کیوں نہیں کرتے؟"
+urdu_text2 = "تم کیوں اپنی کوششیں نہیں کرتے؟"
+Call the necessary functions to perform plagiarism check and get the results:
+python
+
+english_text1 = translate_to_english(urdu_text1)
+english_text2 = translate_to_english(urdu_text2)
+
+similarity_score = calculate_similarity(english_text1, english_text2)
+dissimilar_words = find_dissimilar_words(urdu_text1, urdu_text2)
+
+print(f"Similarity score: {similarity_score * 100:.2f}%")
+print("Dissimilar words:")
+for word in dissimilar_words:
+    print(word)
+License:
+This code is licensed under the MIT License. You can find the license details in the LICENSE file.
+
+For more information, please visit the repository.
+
+css
+
+
+Feel free to modify the content according to your specific repository and code details.
