@@ -1,4 +1,4 @@
-# URDUPLAGCHECKB 
+# URDUPLAGCHECK
 Code Usage Instructions
 
 This code provides functionality for translating text from Urdu to English, calculating similarity between two texts, and finding dissimilar words. It utilizes the nltk library for text processing and the mtranslate library for translation.
