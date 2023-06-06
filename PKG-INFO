@@ -3,7 +3,7 @@ Name: URDUPLAGCHECK
 Version: 1.0.0
 Summary: A tool for checking plagiarism in Urdu text
 Author: Rishi Barua
-Author-Email: rishi@example.com
+Author-Email: rishibarua6345@gmail.com
 License: MIT
 Description: URDUPLAGCHECK is a Python tool designed to check for plagiarism in Urdu text. It uses the nltk library for text tokenization and the mtranslate library for language translation. By comparing the similarity between two Urdu texts, it identifies potential plagiarized content and provides a similarity score.
 
